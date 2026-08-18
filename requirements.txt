@@ -1,0 +1,65 @@
+# Consolidated pip-installable dependencies across all skills in this repo.
+# Install what you need for the skills you're actually using, not everything —
+# this list spans 20 skills across characterization, synthesis, and simulation,
+# and most are mutually exclusive by research area. See docs/getting-started.md
+# (if present) or each SKILL.md's `compatibility` frontmatter field for version notes.
+
+# Core (used across most analysis/stats skills)
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+scikit-image
+
+# materials-structure-analysis, computational-materials, materials-databases
+pymatgen
+mp-api
+
+# diffraction (Rietveld refinement)
+GSAS-II   # distributed via conda-forge or the GSAS-II installer, not always a plain pip package — see project docs
+
+# microscopy (TEM/STEM spectrum imaging)
+hyperspy
+
+# spectroscopy (peak fitting)
+lmfit
+
+# electrochemistry (EIS equivalent-circuit fitting)
+impedance
+
+# materials-databases
+aflow
+jarvis-tools
+matbench
+requests   # OQMD, NOMAD, OPTIMADE — plain REST, no dedicated client needed
+
+# materials-informatics-ml
+matminer
+
+# computational-materials (MD, ML interatomic potentials)
+ase
+mace-torch
+# lammps: Python bindings ship with a LAMMPS build; not a standalone pip package —
+#   see LAMMPS documentation for building with PYTHON package support.
+# NequIP/CHGNet/M3GNet: install per-package if using instead of/alongside MACE.
+
+# phase-field-calphad
+pycalphad
+
+# materials-stats, high-throughput-autonomous-labs
+pyDOE2
+scikit-optimize
+
+# --- Not installable via pip — see the relevant SKILL.md for setup ---
+# VASP (computational-materials/references/dft.md): licensed, separate install.
+# Quantum Espresso: open-source but typically built from source or via conda-forge,
+#   not a plain pip package.
+# LAMMPS (computational-materials/references/molecular-dynamics.md): build from
+#   source or conda-forge; Python bindings require building with PYTHON support.
+# MOOSE (phase-field-calphad): built from source, substantial build process.
+# Abaqus, COMSOL, ANSYS (finite-element-modeling): licensed, separate install.
+# Thermo-Calc (phase-field-calphad): licensed, separate install — pycalphad is
+#   the open-source alternative used in this repo's examples.
+# QuPath-equivalent / dedicated diffraction software (FullProf, TOPAS): separate,
+#   often licensed installs — GSAS-II (above) is the open-source option used here.

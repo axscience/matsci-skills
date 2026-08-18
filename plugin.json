@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "matsci-skills",
+  "version": "0.1.0",
+  "description": "Open Agent Skills for materials science research — characterization (diffraction, microscopy, spectroscopy, thermal, mechanical, electrochemical), synthesis/processing, computational materials science (DFT/MD/ML potentials), and cross-cutting statistics/informatics/data-standards. Deliberately complements rather than duplicates existing coverage (e.g. K-Dense's pymatgen skill).",
+  "author": {
+    "name": "matsci-skills contributors"
+  },
+  "homepage": "https://github.com/axscience/matsci-skills",
+  "repository": "https://github.com/axscience/matsci-skills",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "materials-science",
+    "diffraction",
+    "microscopy",
+    "spectroscopy",
+    "dft",
+    "molecular-dynamics",
+    "materials-informatics",
+    "science",
+    "research"
+  ]
+}
