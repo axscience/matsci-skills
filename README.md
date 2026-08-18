@@ -33,7 +33,7 @@ This repo has no dependency on any particular platform. Clone it and use it with
 read Agent Skills:
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/axscience/matsci-skills.git
 ```
 
 - **Claude Code / Cursor / any Agent-Skills-compatible tool**: point it at this repo's root (or copy
